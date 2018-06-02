@@ -9,3 +9,6 @@ GeoLite2-Country-CSV.zip:
 
 euro_v6.btr: GeoLite2-Country-CSV.zip
 	./process.py
+
+data.go: codegen.py euro_v6.btr
+	./codegen.py --go
